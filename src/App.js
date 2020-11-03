@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import api from "./services/api";
 
 function App() {
-  const [projects, setProjects] = React.useState(["Projeto 1", "Projeto 2"]);
+  const [projects, setProjects] = React.useState([]);
 
   React.useEffect(() => {
     api.get("projects").then((response) => {
